@@ -1,0 +1,195 @@
+.body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p{
+  font-size: 1.5em;  
+}
+
+.main{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.header{
+    min-height: 75px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+div.block{
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 14%;
+}
+
+.header > div:last-child{
+    margin-right:0px;
+}
+.logo .name{
+    font-size: 35px;
+    font-weight: bold;
+}
+.logo.phrase{
+    font-size: 12px;
+    font-style: italic;
+}
+/*div.mails-sent{
+    float: left;
+    width: 100px;
+}
+div.phrase{
+    float: right;
+    width: 100px;
+}*/
+
+.mails-sent{
+    align-items: center;
+}
+
+.mails-sent .count{
+    font-size: 25px;
+    font-weight: bold;
+}
+.mails-sent .text{
+    font-style: italic;
+}
+
+.phrase .sign{
+    text-align: right;
+}
+
+.middle{
+    min-height: 75px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+div.text-block{
+    vertical-align: top;
+    display: inline-block;
+}
+.sent-header::after{
+        content: ' ';
+        display: block;
+}
+
+.sent-header{
+    font-weight: bold;
+}
+.message {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.input-label{
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+.input-text{
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.textarea-text{
+    display: block;
+    width: 100%;
+    height: 160px;
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input[type="button"]{
+    margin-left: 82%;
+    display: inline-block;
+    width: 132px;
+    height: 39px;
+    background-color: #ffb10059;
+    font-weight: bold;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.mudule{
+    /*width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    display: none;
+    background-color: #4141416e;*/
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.795);
+    z-index: 1000;
+
+}
+.content{
+    border: solid black 1px;
+    border-radius: 7px;
+    background-color: white;
+    width: 50%;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    margin: -125px 0 0 -125px; 
+}
+
+.close-cross{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 96%;
+}
+.close-cross:before, .close-cross:after{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 4px;
+    background: rgb(230, 0, 0);
+}
+.close-cross:before{
+    transform: rotate(45deg);
+}
+
+.close-cross:after{
+    transform: rotate(-45deg);
+}
+
+.sent-block{
+    float: right;
+    width:60%;
+}
+.g-recaptcha{
+    visibility: hidden;
+}
